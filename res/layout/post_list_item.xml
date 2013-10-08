@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    >
+
+	<TextView
+	    android:id="@+id/post_list_tvPhone"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/post_list_nickname"
+        android:layout_toRightOf="@+id/post_list_icon"
+        android:onClick="onClickPost_tvPhone"
+	    android:text="TextView"
+	    android:textColor="#999999" />
+
+	<TextView
+	    android:id="@+id/post_list_nickname"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@+id/post_list_icon"
+	    android:paddingTop="15dp"
+	    android:onClick="onClickPost_tvNickname"
+	    android:text="TextView"
+	    android:textColor="#6666CC" />
+
+	<ImageView
+	    android:id="@+id/post_list_icon"
+	    android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:onClick="onClickPost"
+	    android:src="@drawable/post_form_list_icon" />
+	
+	<CheckBox
+	    android:id="@+id/post_list_phonenumber"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/textView1"
+	    android:layout_centerInParent="true"
+	    android:background="@drawable/common_elements_checkbox_background"
+	    android:button="@drawable/common_elements_checkbox"
+	    android:onClick="onClickChecked" />
+
+</RelativeLayout>

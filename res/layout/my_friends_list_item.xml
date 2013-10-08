@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relMyfriends"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#80FFFFFF" >
+
+    <ImageView
+        android:id="@+id/iv_myfriends_list_item"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:src="@drawable/post_form_list_icon" />
+
+    <TextView
+        android:id="@+id/tv_name_myfriends_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv_myfriends_list_item"
+        android:paddingTop="15dp"
+        android:text="TextView"
+        android:textColor="#6666CC" />
+
+    <TextView
+        android:id="@+id/tv_phone_myfriends_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_myfriends_list_item"
+        android:layout_toRightOf="@+id/iv_myfriends_list_item"
+        android:text="TextView"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_form_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/llLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/login_form_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="20dp"
+            android:paddingTop="50dp"
+            android:src="@drawable/login_form_icon" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_form_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top|center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_form_edittext"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="phone"
+            android:lines="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="#CCCCFF"
+            android:textSize="16sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPhoneNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top|center"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/login_form_edittext"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:nextFocusForward="@+id/etPhoneNumber"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="#CCCCFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etName"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_form_button"
+            android:text="ДАЛЕЕ"
+            android:textColor="#CCCCFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnOpenCodeForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/login_form_buttons"
+            android:text="ВВЕСТИ КОД"
+            android:textColor="#CCCCFF"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llConfirmation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/login_form_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="20dp"
+            android:paddingTop="50dp"
+            android:src="@drawable/login_form_icon" />
+
+   		<EditText
+   		    android:id="@+id/etConfirmationCode"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_below="@id/login_form_icon2"
+   		    android:layout_centerHorizontal="true"
+   		    android:layout_marginLeft="18dp"
+   		    android:layout_marginRight="18dp"
+   		    android:layout_marginTop="10dp"
+   		    android:layout_weight="6"
+   		    android:background="@drawable/login_form_edittext"
+   		    android:ellipsize="start"
+   		    android:ems="10"
+   		    android:paddingTop="10dp"
+   		    android:paddingBottom="10dp"
+   		    android:gravity="center"
+   		    android:inputType="phone"
+   		    android:textAlignment="center"
+   		    android:textColor="#CCCCFF"
+   		    android:textColorHint="#CCCCFF"
+   		    android:textSize="15sp" />
+
+   		<Button
+   		    android:id="@+id/btnConfirm"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_below="@id/etConfirmationCode"
+   		    android:layout_centerHorizontal="true"
+   		    android:layout_gravity="center"
+   		    android:layout_marginLeft="15dp"
+   		    android:layout_marginRight="15dp"
+   		    android:layout_marginTop="20dp"
+   		    android:layout_weight="4"
+   		    android:background="@drawable/login_form_button"
+   		    android:text="ПОДТВЕРДИТЬ"
+   		    android:textColor="#CCCCFF"
+   		    android:textSize="15sp" />
+
+   		<TextView
+   		    android:id="@+id/tvlogin4"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_centerHorizontal="true"
+   		    android:layout_below="@id/btnConfirm"
+   		    android:layout_marginTop="5dp"
+   		    android:gravity="center"
+   		    android:text="Для завершения регистрации дождитесь SMS и введите регистрационный код "
+   		    android:textColor="#CCCCFF"
+   		    android:textSize="12sp" />
+   		
+   		<Button
+   		    android:id="@+id/btnOpenRegForm"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignParentBottom="true"
+   		    android:layout_centerHorizontal="true"
+   		    android:layout_marginBottom="10dp"
+   		    android:layout_marginLeft="15dp"
+   		    android:layout_marginRight="15dp"
+   		    android:background="@drawable/login_form_button"
+   		    android:text="НАЗАД"
+   		    android:textColor="#CCCCFF"
+   		    android:textSize="15sp" />
+   		
+   		<TextView
+   		    android:id="@+id/tvLicense"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_above="@id/btnOpenRegForm"
+   		    android:layout_centerHorizontal="true"
+   		    android:layout_marginBottom="10dp"
+   		    android:layout_marginLeft="15dp"
+   		    android:layout_marginRight="15dp"
+   		    android:layout_marginTop="5dp"
+   		    android:gravity="center"
+   		    android:paddingTop="10dp"
+   		    android:paddingBottom="10dp"
+   		    android:text="Создавая аккаунт, вы соглашаетесь с Пользовательским соглашением"
+   		    android:textColor="#CCCCFF"
+   		    android:textSize="8sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

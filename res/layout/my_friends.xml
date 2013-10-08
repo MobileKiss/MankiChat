@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/post_form_background"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lvContactsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+   			android:cacheColorHint="#00000000"
+            android:divider="@drawable/common_elements_devider"
+            android:drawSelectorOnTop="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" >
+
+        </ListView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/my_friends_ivBenner"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo_post_background_findfriendsbyname" />
+
+    <ImageView
+        android:id="@+id/my_friends_ivBenner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/messages_form_banner" />
+
+    <ImageView
+        android:id="@+id/myfriends_form_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/common_btnback"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/my_friends_tvBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myfriends_form_backbtn"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:text="МОИ ДРУЗЬЯ"
+        android:textColor="#CCCCFF"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/btnFindFriendsByLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/myfriends_form_btnconfirm_search"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/etFindFriendsByLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btnFindFriendsByLogin"
+        android:background="@drawable/login_form_edittext"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="ВВЕДИТЕ НИКНЕЙМ ДРУГА"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="#CCCCFF"
+        android:textColorHint="#CCCCFF"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/my_friends_btninvite_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/myfriends_btninvite_friends" />
+
+</RelativeLayout>

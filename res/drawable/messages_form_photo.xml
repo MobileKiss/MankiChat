@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:state_pressed="false"
+    android:drawable="@drawable/messages_form_photo_btn" />
+
+<item android:state_pressed="true"
+    android:drawable="@drawable/messages_form_photo_btn_pressed" />
+
+</selector>
